@@ -1,11 +1,13 @@
-import { Routes, Route } from 'react-router-dom'
-import Register from './components/Register'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import SubmitForm from "./SubmitForm"
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Register />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SubmitForm />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
